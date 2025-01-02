@@ -1,3 +1,5 @@
+import sun.reflect.generics.tree.BaseType;
+
 import java.util.Scanner;
 
 public class DramGeometry {
@@ -8,17 +10,13 @@ public class DramGeometry {
         Scanner input = new Scanner(System.in);
 
         while (choice != 4) {
-            System.out.print("
-                    Menu:
-                    1. Print the rectangle
-                    2. Print the square triangles (The corner is square at 4 different angles: top-left, top-right, bottom-left, bottom-right)
-                    3. Print isosceles triangle
-                    4. Exit + );
-
-
+            System.out.println(" Menu: " );
+            System.out.println("1. Print the rectangle");
+            System.out.println("2. Print the square triangles (The corner is square at 4 different angles: top-left, top-right, bottom-left, bottom-right");
+            System.out.println("3. Print isosceles triangle");
+            System.out.println("4. Exit");
             System.out.println("Enter your choice: ");
             choice = input.nextInt();
-
             switch (choice) {
                 case 1:
                     System.out.println("Print the rectangle:");
